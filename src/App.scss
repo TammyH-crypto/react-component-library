@@ -81,7 +81,24 @@ main {
     &__title{
         font-size: clamp(2rem, 5vw, 3rem);
         margin-bottom: 1rem;
-        
+
+    }
+    &__subtitle{
+        max-width: fit-content;
+        margin: 0 auto 2rem;
+    }
+    &__cta {
+        background: $soft;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover{
+            transform: translate(-2px);
+            box-shadow: 5px 5px 15px black;
+        }
     }
 }
 
