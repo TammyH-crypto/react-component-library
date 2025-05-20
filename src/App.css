@@ -5,19 +5,75 @@
 }
 
 html,
+#root,
 body {
   height: 100%;
 }
 
-body {
+#root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
-  background-color: lightblue;
+  background-color: rgb(15, 15, 199);
 }
 
 main {
+  background-color: rgb(15, 15, 199);
   flex: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgb(235, 157, 12);
+}
+.nav__logo {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.nav__links {
+  display: none;
+  gap: 1.5rem;
+}
+.nav__links a {
+  color: rgb(15, 15, 199);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.nav__links a:hover {
+  color: rgb(15, 15, 199);
+  text-decoration: underline;
+}
+.nav__cta {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: rgb(64, 177, 214);
+  background-color: rgb(104, 71, 182);
+  cursor: pointer;
+}
+
+@media (width > 48rem) {
+  .nav__links {
+    display: flex;
+  }
+}
+.hero {
+  background: linear-gradient(135deg, rgb(13, 139, 180) 0%, rgb(15, 15, 199) 100);
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.hero__title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.footer {
+  font-size: medium;
+  background-color: rgb(235, 157, 12);
+  text-align: center;
 }

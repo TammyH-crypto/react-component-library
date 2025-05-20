@@ -1,9 +1,16 @@
 import "./App.scss";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import NavBar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      <NavBar />
+      <main>
+        <Hero />
+      </main>
+      <Footer />
     </>
   );
 }
